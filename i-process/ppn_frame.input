@@ -1,0 +1,60 @@
+! this file is for selecting which i-process case to run 
+!
+! lines starting with ! are comments, "uncommenting a line" means
+! removing the leading ! from that line, "commenting a line" means
+! adding a ! to the beginning first character
+
+&ppn_frame
+
+! each case is defined by the maximum run time (T_MAX) and by the
+! initial abundance, select exactly ONE pair below by uncommenting
+! both lines, leaving the other two pairs commented.
+
+        T_MAX = 7.08407D-03       ! CASE1: '2ndpeak' for CEMP-i stars
+        ini_filename = "iniab_2ndpeak.dat"
+
+      ! T_MAX = 1.58919D-04       ! CASE2: 'Sakurai' for post-AGB H-ingestion objects
+      ! ini_filename = "iniab_Sakurai.dat"  
+
+      ! T_MAX = 1.62134e-4        ! CASE3: 'weak' for weak i process stars
+      ! ini_filename = "iniab_weak.dat"
+
+! Select if you want flux output. The run takes considerably longer with flux output.
+        iplot_flux_option = 0     ! 0: no print fluxes; 1: print fluxes in flux_*.DAT
+        i_flux_integrated = 0     ! calculate time integrated fluxes [mol/g]
+
+! you probably don't need to change anything below
+        T9 = 0.2D0                ! constant temperature
+        RHO = 1.0D4               ! /cgs
+        DT = 1.0D-8               ! initial time step
+        DT_MAX = 1.D-4            ! max number dzeitj can be
+	dt_factor = 1.01d0
+
+        IABUINI = 100             ! how to initialize
+        IOLEVEL = 1               ! controls input/output
+        CPREFIX = 'iso_massf'     ! prefix of abundance vector output
+/
+
+! *** end of namelist
+
+   ! the parameter values are given as fortran95 "namelists"
+   ! here's a brief summary of how things work with namelists.
+   ! each line in a namelist is of the form   name = value ! comment
+   ! each name must be declared as a control in the program,
+   ! but you don't need to include all of the controls in the list.
+   ! and the order of the list doesn't matter.
+   ! blank lines and comment lines can be freely included in the list.
+   ! blanks at the start of a line containing a name-value pair are okay too.
+   ! all of the controls are given reasonable default values at initialization.
+   ! so you only need to set the ones that you actually want to change
+   ! if you don't want to change a control, but you do want to keep in the list
+   ! either comment out the line, or leave the value field blank.
+   ! fortran supports structured values in namelists (arrays and derived types)
+   ! but for simplicity, we only use basic types (integers, doubles, logicals, strings).
+   ! values are given using the usual fortran syntax.
+   ! for example, character string values are enclosed in quotes
+   ! ****** REMINDER ******
+   ! A '/' character terminates the namelist.
+   ! So, do not use '/' outside of comments or strings.
+   ! In particular, don't write something like 1d0/3d0 as a value.
+

@@ -1,0 +1,4 @@
+rm -f iso_massf*DAT
+rm -f flux*DAT
+rm -f x-time.dat
+rm -f *png
