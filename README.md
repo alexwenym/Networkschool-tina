@@ -7,3 +7,6 @@ TINA is a JupyterHub for training in nuclear astrophysics provided by the [NSF P
 
 ## i process
 See `i-process/README.md` for more info on the i process module of TINA.
+
+## About
+TINA has been created by Falk Herwig and Pavel Denissenkov (NuGrid, UVic) and Hendrik Schatz (JINA-CEE, MSU). TINA has been used, for example in the JINA-CEE [PAN: Physics of Atomic Nuclei] (https://www.jinaweb.org/educational-outreach/physics-atomic-nuclei-pan) program for highschool students.
