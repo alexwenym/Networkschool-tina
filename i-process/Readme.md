@@ -7,9 +7,9 @@ plots in those notebooks require flux output which is by default turned off for 
 runs. Turn it on by setting `iplot_flux_option = 1` in the input file
 `ppn_frame.input`. 
 
-The `master-result` folder does contain the default reference output including flux data. It is available as a compressed archive `tina-iprocess-master-result.tgz` in `/data/nugrid-data/projects/tina` which is also accessible via the Globus endpoint `astrohub#nugrid:/data/projects/tina`. You can extract this zipped tar archive into the present directory with the following command in a Python notebook:
-```Python
-!tar -xzvf /data/nugrid_data/projects/tina/tina-iprocess-master-result.tgz 
+The `master-result` folder does contain the default reference output including flux data. It is available as a compressed archive `tina-iprocess-master-result.tgz` in `/data/nugrid-data/projects/tina` which is also accessible via the Globus endpoint `astrohub#nugrid:/data/projects/tina`. You can extract this zipped tar archive you need to use the terminal, navigate into the correct run directory and issue the command
+```Shell
+tar -xzvf /data/nugrid_data/projects/tina/tina-iprocess-master-result.tgz 
 ```
 
 
