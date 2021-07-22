@@ -32,7 +32,7 @@ fi
 
 git clone https://github.com/NuGrid/Networkschool-tina.git $1
 ln -s /data/NPDATA $1/NPDATA
-ln -s /data/master-result $1/master-result
+ln -s /data/master-result $1/i-process/master-result
 echo To run your first test type change into your directory:
 echo $ cd $1/i-process
 echo And then start the program by typing:
