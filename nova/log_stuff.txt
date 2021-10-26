@@ -1,0 +1,7 @@
+Calling get method in cycle mode, adding a_iso_to_plot, z.. el.. isotope.. isotope... to instance
+WARNING:
+This initial abundance file uses an element name that does
+not contain the mass number in the 3rd to 5th position.
+It is assumed that this is the proton and we will change
+the name to 'h   1' to be consistent with the notation used in
+iniab.dat files
