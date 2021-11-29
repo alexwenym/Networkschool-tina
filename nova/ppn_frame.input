@@ -19,6 +19,11 @@
         CPREFIX = 'iso_massf'  ! prefix of abundance vector output
         iplot_flux_option = 0  ! 0: no print fluxes; 
 			       ! 1: print fluxes in flux_*.DAT
+
+        iplot_rate = -1        ! if positive print rate of this reaction from networksetup.txt
+        rate_z1 = 7D0          ! electric charge of the first nucleus in the reaction
+        rate_z2 = 1D0          ! electric charge of the second nucleus in the reaction
+        rate_file = 'n13pg_rate.txt' ! name of file to print this reaction rate
 /
 
 ! *** end of namelist
