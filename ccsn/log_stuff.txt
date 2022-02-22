@@ -1,0 +1,26 @@
+Calling get method in cycle mode, adding a_iso_to_plot, z.. el.. isotope.. isotope... to instance
+WARNING: decayed in _getcycle ignores isomers and will decay alpha-unstable p-rich nuclei as if they were beta+ stable.
+Initialising decay index pointers ....
+Th does not exist in this run
+U does not exist in this run
+At does not exist in this run
+Rn does not exist in this run
+Fr does not exist in this run
+Ra does not exist in this run
+Ac does not exist in this run
+Pa does not exist in this run
+Np does not exist in this run
+Pu does not exist in this run
+Am does not exist in this run
+Cm does not exist in this run
+Bk does not exist in this run
+Cf does not exist in this run
+It seems unstable species He-6 wants to decay to Li-6, however this species is not in this run. This points to an inconsistency in the network build. Here we will ignore the abundance of He-6.
+It seems unstable species Be-10 wants to decay to B-10, however this species is not in this run. This points to an inconsistency in the network build. Here we will ignore the abundance of Be-10.
+Can't find element Th in isotopedatabase.txt
+WARNING:
+This initial abundance file uses an element name that does
+not contain the mass number in the 3rd to 5th position.
+It is assumed that this is the proton and we will change
+the name to 'h   1' to be consistent with the notation used in
+iniab.dat files
