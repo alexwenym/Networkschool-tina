@@ -18,7 +18,7 @@
         IOLEVEL = 1            ! controls input/output
         PLIST = 0              ! new in progress
         CPREFIX = 'iso_massf'  ! prefix of abundance vector output
-        iplot_flux_option = 1  ! 0: no print fluxes; 1: print fluxes in flux_*.DAT
+        iplot_flux_option = 0  ! 0: no print fluxes; 1: print fluxes in flux_*.DAT
         i_flux_integrated = 0  ! 0: no integrated fluxes; 1: integrated fluxes
         fm_mixing_factor = 0   ! 0: no mixing (works with IABUINI = 8 and 100)
         tau = 1.d3             ! mixing timescale in seconds
